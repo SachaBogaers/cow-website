@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title> De familie Koe - Schrijf ons! </title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<header>
+		<nav>
+			<h1>De familie Koe</h1>
+			<ul class="navigation-items">
+				<li><a href="index.html">Het weiland</a></li>
+				<li><a href="about.html">De schuur</a></li>
+				<li><a href="contact.html">Schrijf ons!</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main class="page-content">
+		<h2>We vinden het heel leuk als je ons een briefje wilt schrijven!</h2>
+		<div class="contact-form">
+			<form name="contact" method="POST" data-netlify="true">
+				<div>
+					<label for="name">Jouw naam</label><br>
+					<input name="name" type="text" />
+				</div>
+				<div>
+					<label for="email">Jouw e-mailadres</label><br>
+					<input name="email" type="email" />
+				</div>
+				<div>
+					<label for="phone">Jouw telefoonnummer</label><br>
+					<input name="phone" type="tel" />
+				</div>
+				<div>
+					<label for="age">Jouw leeftijd</label><br>
+					<input name="age" type="number" min="1" max="150" />
+				</div>
+
+				<div id="fav-cow"><label>Jouw favoriete koe</label>
+					<label for="anna"><input type="radio" name="cow" value="anna">Anna</label>
+					<label for="pieter"><input type="radio" name="cow" value="pieter">Pieter</label>
+					<label for="madeliefje"><input type="radio" name="cow" value="madeliefje">Madeliefje</label>
+					<label for="eefje"><input type="radio" name="cow" value="eefje">Eefje</label><br>
+					<label for="francois"><input type="radio" name="cow" value="francois">Francois</label>
+				</div>
+				<div>
+					<label for="message">Jouw briefje</label><br>
+					<textarea name="message"></textarea>
+				</div>
+				<div>
+					<label for="upload">Liever een brief op papier schrijven? Maak er een foto van en upload hem
+						hier!</label><input type="file">
+				</div>
+				<button type="submit">Verstuur!</button> <button type="reset">Reset formulier</button>
+			</form>
+		</div>
+	</main>
+	<footer>Copyright Sacha 2021</footer>
+</body>
+
+</html>

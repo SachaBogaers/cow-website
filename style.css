@@ -1,0 +1,222 @@
+/*General styles */
+
+body, html {
+	color: #111;
+	margin: 0;
+	background-color: #11B4D8;
+}
+
+h1 {
+	text-align: center;
+	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	color: midnightblue;
+	font-size: 25px;
+	font-family: 'RocknRoll One', sans-serif;
+}
+
+h2 {
+	text-align: center;
+	font-size: 20px;
+
+}
+
+p {
+	padding: 5px;
+	text-align: center;
+}
+
+ol {
+	text-align: center;
+	list-style-position: inside;
+}
+
+
+a {
+	color: midnightblue;
+	text-decoration: none;
+	transition: 300ms;
+	border-bottom: 1px solid transparent;
+}
+
+a:hover {
+	border-color: black;
+	
+}
+
+/* Page layout */
+
+.page {
+	display: grid;
+	grid-template-columns: 1fr;
+  	grid-template-rows: 100px 0.5fr auto auto 100px;
+  	grid-template-areas:
+	"nav"
+    "header" 
+    "main"
+	"aside"
+    "footer";
+}
+
+
+nav {
+	grid-area: nav;
+	background-color: #11B4D8;
+}
+
+
+header {
+	grid-area: header;
+}
+
+.page-content {
+	grid-area: main;
+	padding: 50px 50px 50px 50px;
+	background-color: #68D9F3;
+}
+
+aside {
+	margin: 10px;
+	grid-area: aside;
+	background-color: #68D9F3;
+	text-align: left;
+	padding: 25px;
+}
+
+footer {
+	grid-area: footer;
+}
+
+/* Home page */
+
+.hero {
+	background: url('cows-grass.jpg') center;
+	background-size: cover;
+	padding: 4rem 2rem;
+}
+
+.hero-text {
+	margin: 300px auto 0px auto;
+	background-color: rgba(118, 159, 182, 0.8);
+	padding: 10px;
+	text-align: center;
+}
+
+.barn-button {
+	background-color: #188FA7;
+	width: 100px;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	margin: 0 auto;
+	border: 2px solid black;
+	box-shadow: 1px 2px grey;
+}
+
+
+
+/* Nav */
+
+nav h1 {
+	text-align: left;
+	display: inline;
+}
+
+.navigation-items {
+	display: flex;
+	justify-content: flex-end;
+
+}
+
+.navigation-items li {
+	display: inline;
+	padding: 10px;
+	font-size: 20px;
+}
+
+.navigation-items a {
+	text-decoration: none;
+	color: #111;
+}
+
+
+/* About page */
+.about-hero {
+	background: url('barn.jpg') center;
+	background-size: cover;
+}
+
+.about-text {
+	text-align: center;
+}
+.about-image {
+	width: 250px;
+	display: block;
+	margin: 0 auto;
+}
+
+.video {
+	margin: 0 auto;
+	display: block;
+}
+
+
+/* Contact page */
+input, textarea{
+	display: inline-block;
+	background-color: lightgrey;
+	padding: 5px;
+	margin: 5px;
+}
+
+form #message {
+	width: 400px;
+	height: 200px;
+}
+
+#fav-cow {
+	display: block;
+	margin-bottom: 10px;
+}
+
+.contact-form {
+	margin: 0 auto;
+	width: 50%;
+	display: block;
+	text-align: center;
+}
+
+button[type="submit"] {
+	margin: 10px;
+}
+
+
+/*Footer */
+footer {
+	font-size: 14px;
+	margin: 10px 0px;
+	padding-top: 50px;
+	text-align: right;
+}
+
+
+ @media (min-width: 1024px) {
+	.page {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		  grid-template-rows: 100px 0.5fr auto 100px;
+		  grid-template-areas:
+		"nav nav"
+		"header header" 
+		"main aside" 
+		"footer footer";
+	}
+	.page-content {
+		margin: 10px;
+		padding: 100px 150px 25px 150px;
+	}
+
+
+
+
+  }
+
